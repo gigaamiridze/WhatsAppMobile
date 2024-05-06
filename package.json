@@ -10,9 +10,10 @@
     "test": "jest",
     "clean:android": "cd android && ./gradlew clean && cd ..",
     "clean:ios": "cd ios && rm -rf build && cd ..",
-    "podinstall": "cd ios && pod install && cd ..",
-    "podremove": "cd ios && pod deintegrate && cd ..",
-    "podupdate": "cd ios && pod install --repo-update && cd .."
+    "pod:install": "cd ios && pod install && cd ..",
+    "pod:remove": "cd ios && pod deintegrate && cd ..",
+    "pod:update": "cd ios && pod install --repo-update && cd ..",
+    "build:ios": "react-native bundle --entry-file='index.js' --bundle-output='./ios/main.jsbundle' --dev=false --platform='ios' --assets-dest='./ios'"
   },
   "dependencies": {
     "@react-native-firebase/app": "^19.2.2",
