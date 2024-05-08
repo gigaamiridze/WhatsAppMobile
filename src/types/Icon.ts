@@ -1,0 +1,18 @@
+export type IconType =
+  | 'AntDesign'
+  | 'Entypo'
+  | 'EvilIcons'
+  | 'Feather'
+  | 'FontAwesome'
+  | 'FontAwesome5'
+  | 'FontAwesome5Pro'
+  | 'FontAwesome6'
+  | 'FontAwesome6Pro'
+  | 'Fontisto'
+  | 'Foundation'
+  | 'Ionicons'
+  | 'MaterialCommunityIcons'
+  | 'MaterialIcons'
+  | 'Octicons'
+  | 'SimpleLineIcons'
+  | 'Zocial';
