@@ -6,7 +6,7 @@ function App() {
     <SafeAreaView>
       <StatusBar barStyle={'light-content'} />
       <ScrollView contentInsetAdjustmentBehavior={'automatic'}>
-        <Text />
+        <Text>WhatsApp</Text>
       </ScrollView>
     </SafeAreaView>
   );
