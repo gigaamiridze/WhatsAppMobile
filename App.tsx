@@ -2,7 +2,7 @@ import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { SafeAreaView, StatusBar } from 'react-native';
 import { StackNavigation } from './src/navigation';
-import { globalStyles } from './src/styles';
+import { globalStyles } from './src/assets';
 
 function App() {
   return (
