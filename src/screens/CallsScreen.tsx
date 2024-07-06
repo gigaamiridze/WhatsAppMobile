@@ -1,10 +1,16 @@
-import { ScrollView, Text } from 'react-native';
+import { SafeAreaView, ScrollView, Text } from 'react-native';
+import { globalStyles } from '../assets';
 
 function CallsScreen() {
   return (
-    <ScrollView contentInsetAdjustmentBehavior='automatic' showsVerticalScrollIndicator={false}>
-      <Text>Calls</Text>
-    </ScrollView>
+    <SafeAreaView style={globalStyles.flex}>
+      <ScrollView
+        contentInsetAdjustmentBehavior={'automatic'}
+        showsVerticalScrollIndicator={false}
+      >
+        <Text>Calls</Text>
+      </ScrollView>
+    </SafeAreaView>
   );
 }
 

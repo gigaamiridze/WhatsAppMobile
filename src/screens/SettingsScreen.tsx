@@ -1,10 +1,16 @@
-import { ScrollView, Text } from 'react-native';
+import { SafeAreaView, ScrollView, Text } from 'react-native';
+import { globalStyles } from '../assets';
 
 function SettingsScreen() {
   return (
-    <ScrollView contentInsetAdjustmentBehavior='automatic' showsVerticalScrollIndicator={false}>
-      <Text>Settings</Text>
-    </ScrollView>
+    <SafeAreaView style={globalStyles.flex}>
+      <ScrollView
+        contentInsetAdjustmentBehavior={'automatic'}
+        showsVerticalScrollIndicator={false}
+      >
+        <Text>Settings</Text>
+      </ScrollView>
+    </SafeAreaView>
   );
 }
 

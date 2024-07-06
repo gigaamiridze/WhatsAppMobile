@@ -6,6 +6,10 @@ const globalStyles = StyleSheet.create({
   flex: {
     flex: 1,
   },
+  flexCenter: {
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
   backgroundWhite: {
     backgroundColor: Colors.WHITE,
   },
