@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
-import { SafeAreaView, ScrollView, StatusBar, Text } from 'react-native';
+import { SafeAreaView, StatusBar } from 'react-native';
+import { StackNavigation } from './src/navigation';
 import { globalStyles } from './src/styles';
 
 function App() {
@@ -8,9 +9,7 @@ function App() {
     <NavigationContainer>
       <SafeAreaView style={globalStyles.flex}>
         <StatusBar barStyle={'light-content'} />
-        <ScrollView contentInsetAdjustmentBehavior={'automatic'}>
-          <Text>WhatsApp</Text>
-        </ScrollView>
+        <StackNavigation />
       </SafeAreaView>
     </NavigationContainer>
   );
