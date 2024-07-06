@@ -24,9 +24,19 @@ target 'WhatsAppMobile' do
     # An absolute path to your application root.
     :app_path => "#{Pod::Config.instance.installation_root}/.."
   )
-  
+
+  pod 'leveldb-library', :modular_headers => true
   pod 'GoogleUtilities', :modular_headers => true
+  pod 'GTMSessionFetcher', :modular_headers => true
+  pod 'FirebaseCore', :modular_headers => true
+  pod 'FirebaseStorage', :modular_headers => true
+  pod 'FirebaseDatabase', :modular_headers => true
+  pod 'FirebaseFirestore', :modular_headers => true
+  pod 'FirebaseAuthInterop', :modular_headers => true
   pod 'FirebaseCoreInternal', :modular_headers => true
+  pod 'FirebaseCoreExtension', :modular_headers => true
+  pod 'FirebaseAppCheckInterop', :modular_headers => true
+  pod 'FirebaseFirestoreInternal', :modular_headers => true
 
   target 'WhatsAppMobileTests' do
     inherit! :complete
